@@ -1,0 +1,33 @@
+.heading{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 10px;
+}
+.welcome{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+.questions{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.video{
+    margin-top: 20px;
+}
+
+.layout{
+   margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    margin-bottom: 30px;
+}
+.Book-section{
+   margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    margin-bottom: 30px; 
+}
