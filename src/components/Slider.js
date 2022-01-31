@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SliderContent from "./SliderContent";
-import Dots from "./Dots";
-import Arrows from "./Arrows";
+// import Dots from "./Dots";
+// import Arrows from "./Arrows";
 import sliderImage from "./sliderImage";
 import "./slider.css";
 
@@ -20,19 +20,19 @@ function Slider(props) {
   return (
     <div className="slider-container">
       <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />
-      <Arrows
+      {/* <Arrows
         prevSlide={() =>
           setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
         }
         nextSlide={() =>
           setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
         }
-      />
-      <Dots
+      /> */}
+      {/* <Dots
         activeIndex={activeIndex}
         sliderImage={sliderImage}
         onclick={(activeIndex) => setActiveIndex(activeIndex)}
-      />
+      /> */}
     </div>
   );
 }
