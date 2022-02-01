@@ -1,11 +1,11 @@
 import React from 'react';
 import "./Message.css"
 import Banner from "../assets/Banner.jpeg";
-import video from "../assets/video.mp4";
-import video1 from "../assets/video1.mp4";
-import video2 from "../assets/video2.mp4";
-import video3 from "../assets/video3.mp4";
-import video4 from "../assets/video4.mp4";
+import video from "../assets/video1.mp4";
+import video1 from "../assets/video2.mp4";
+import video2 from "../assets/video3.mp4";
+import video3 from "../assets/video4.mp4";
+import video4 from "../assets/video5.mp4";
 import VideoDisplay from "./VideoDisplay";
 import videoImage1 from "../assets/videoImage.png";
 import NowPlaying from "../assets/NowPlaying.jpg";

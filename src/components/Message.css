@@ -215,7 +215,13 @@ border-radius: 16px;
 
 
 @media screen and (min-width:1024px){
-
+    .Banner-image{
+        height: 200px;
+    }
+.Banner-image img{
+    height: 100%;
+    object-fit: fill;
+}
     .welcome{
 text-align: center;
     
