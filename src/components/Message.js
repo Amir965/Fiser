@@ -1,11 +1,11 @@
 import React from 'react';
 import "./Message.css"
 import Banner from "../assets/Banner.jpeg";
-import video from "../assets/video1.mp4";
-import video1 from "../assets/video2.mp4";
-import video2 from "../assets/video3.mp4";
-import video3 from "../assets/video4.mp4";
-import video4 from "../assets/video5.mp4";
+import video1 from "../assets/video1.mp4";
+import video2 from "../assets/video2.mp4";
+import video3 from "../assets/video3.mp4";
+import video4 from "../assets/video4.mp4";
+import video5 from "../assets/video5.mp4";
 import VideoDisplay from "./VideoDisplay";
 import videoImage1 from "../assets/videoImage.png";
 import NowPlaying from "../assets/NowPlaying.jpg";
@@ -58,26 +58,26 @@ const Message = () => {
             autoplay="true"
             onClick={() => videoChanger(video)}
           /> */}
-          <img src={videoImage} alt="" onClick={() => videoChanger(video)} />
-          <p>1. How to get more repeat customers? (By Creating Offers)</p>
-        </div>
-        <div className="questions">
           <img src={videoImage} alt="" onClick={() => videoChanger(video1)} />
-
-          <p>2. How to get more repeat customers? (By Billing on Pharma)</p>
+          <p>1. How to get more repeat customers? (By Creating Offers)</p>
         </div>
         <div className="questions">
           <img src={videoImage} alt="" onClick={() => videoChanger(video2)} />
 
-          <p>3. How to increase repeat business from existing customers?</p>
+          <p>2. How to get more repeat customers? (By Billing on Pharma)</p>
         </div>
         <div className="questions">
           <img src={videoImage} alt="" onClick={() => videoChanger(video3)} />
 
-          <p>4. All in one solution for billing, payments, GST reports</p>
+          <p>3. How to increase repeat business from existing customers?</p>
         </div>
         <div className="questions">
           <img src={videoImage} alt="" onClick={() => videoChanger(video4)} />
+
+          <p>4. All in one solution for billing, payments, GST reports</p>
+        </div>
+        <div className="questions">
+          <img src={videoImage} alt="" onClick={() => videoChanger(video5)} />
 
           <p>
             5. All payments, One Solution! Collect Cash, Card, UPI at one place
