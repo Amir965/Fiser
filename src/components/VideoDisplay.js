@@ -6,7 +6,7 @@ function VideoDisplay({ videoSrc, setIsDisplay, setVideoImage }) {
 
   const videoPlayPauseHandle = () => {
     setIsDisplay(false);
-    videoRef.current.stop();
+    videoRef.current.pause();
     setVideoImage(videoImage1);
   };
   return (
