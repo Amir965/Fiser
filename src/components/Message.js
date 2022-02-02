@@ -8,13 +8,20 @@ import video4 from "../assets/video4.mp4";
 import video5 from "../assets/video5.mp4";
 import VideoDisplay from "./VideoDisplay";
 import videoImage1 from "../assets/videoImage.png";
-import NowPlaying from "../assets/NowPlaying.jpg";
-const Message = () => {
-  const [videoSrc, setVideoSrc] = React.useState('');
+import NowPlaying from "../assets/NowPlaying2.png";
+const Message = (props) => {
+  const [videoSrc, setVideoSrc] = React.useState("");
   const [isDisplay, setIsDisplay] = React.useState(false);
-  const [videoImage, setVideoImage] = React.useState(videoImage1);
+  const [disc, setDisc] = React.useState("");
+  const [num, setNum] = React.useState("");
+  const [videoImage, setVideoImage] = React.useState({
+    img1: videoImage1,
+    img2: videoImage1,
+    img3: videoImage1,
+    img4: videoImage1,
+    img5: videoImage1,
+  });
 
-  
   let myInlineCssNone = {
     display: "none",
   };
@@ -23,11 +30,31 @@ const Message = () => {
     display: "block",
   };
 
-  const videoChanger = (videoDynamic) => {
+  const videoChanger = (videoDynamic, num) => {
     setVideoSrc(videoDynamic);
     setIsDisplay(true);
-    setVideoImage(NowPlaying);
-   
+    setNum(num);
+    if (num === "1") {
+      setVideoImage({ ...videoImage, img1: NowPlaying });
+      setDisc("1. How to get more repeat customers? (By Creating Offers)");
+    }
+    if (num === "2") {
+      setVideoImage({ ...videoImage, img2: NowPlaying });
+      setDisc("2. How to get more repeat customers? (By Billing on Pharma)");
+    }
+    if (num === "3") {
+      setVideoImage({ ...videoImage, img3: NowPlaying });
+      setDisc("3. How to increase repeat business from existing customers?");
+    }
+    if (num === "4") {
+      setVideoImage({ ...videoImage, img4: NowPlaying });
+      setDisc("4. All in one solution for billing, payments, GST reports");
+    } else if (num === "5") {
+      setVideoImage({ ...videoImage, img5: NowPlaying });
+      setDisc(
+        "5. All payments, One Solution! Collect Cash, Card, UPI at one place"
+      );
+    }
   };
   return (
     <>
@@ -40,12 +67,15 @@ const Message = () => {
       </div>
       <div
         style={isDisplay ? myInlineCssBlock : myInlineCssNone}
-        className="video-popup"
+        // className="video-popup"
       >
         <VideoDisplay
           videoSrc={videoSrc}
           setIsDisplay={setIsDisplay}
           setVideoImage={setVideoImage}
+          num={num}
+          videoImage={videoImage}
+          disc={disc}
         />
       </div>
       <div className="questions-wrapper">
@@ -53,31 +83,57 @@ const Message = () => {
           {/* <video
             src={video}
             // width="200"
-            // height="300"
+            // height="300
             controls="controls"
             autoplay="true"
             onClick={() => videoChanger(video)}
           /> */}
-          <img src={videoImage} alt="" onClick={() => videoChanger(video1)} />
-          <p>1. How to get more repeat customers? (By Creating Offers)</p>
+          <img
+            src={videoImage.img1}
+            alt=""
+            onClick={() => videoChanger(video1, "1")}
+          />
+          <p>
+            1. How to get more repeat customers?
+            <br /> (By Creating Offers)
+          </p>
         </div>
         <div className="questions">
-          <img src={videoImage} alt="" onClick={() => videoChanger(video2)} />
+          <img
+            src={videoImage.img2}
+            alt=""
+            onClick={() => videoChanger(video2, "2")}
+          />
 
-          <p>2. How to get more repeat customers? (By Billing on Pharma)</p>
+          <p>
+            2. How to get more repeat customers?
+            <br /> (By Billing on Pharma)
+          </p>
         </div>
         <div className="questions">
-          <img src={videoImage} alt="" onClick={() => videoChanger(video3)} />
+          <img
+            src={videoImage.img3}
+            alt=""
+            onClick={() => videoChanger(video3, "3")}
+          />
 
           <p>3. How to increase repeat business from existing customers?</p>
         </div>
         <div className="questions">
-          <img src={videoImage} alt="" onClick={() => videoChanger(video4)} />
+          <img
+            src={videoImage.img4}
+            alt=""
+            onClick={() => videoChanger(video4, "4")}
+          />
 
           <p>4. All in one solution for billing, payments, GST reports</p>
         </div>
         <div className="questions">
-          <img src={videoImage} alt="" onClick={() => videoChanger(video5)} />
+          <img
+            src={videoImage.img5}
+            alt=""
+            onClick={() => videoChanger(video5, "5")}
+          />
 
           <p>
             5. All payments, One Solution! Collect Cash, Card, UPI at one place

@@ -1,54 +1,64 @@
+*{
+    font-family: poppins;
+}
 .Banner-image img{
     width: 100%;
-    /* height: 50%; */
+    height: 80px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     /* object-fit: cover; */
 }
 .welcome{
     text-align: center;
-    
+    margin-top: -10px;
 }
 .welcome h1{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
+    text-align: center;
 }
 .welcome p{
 color: #666666;
 font-size: 10px;
 font-weight: 600;
 margin-top: -10px;
-margin-left: 20px;
-margin-right: 20px;
+/* margin-left: 20px;
+margin-right: 20px; */
 }
 .video-popup{
-    /* display: block;
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-    text-align: center;
+    position: relative;
+    width: 328px;
+    height: 206px;
+    margin: 0 auto;
+    
 }
 .video-popup video{
-width: 300px;
-height: 200px;
-
+width: 100%;
+height: 100%;
+/* top: 213px; */
+border: 3px solid #000000;
+box-sizing: border-box;
+border-radius: 8px 8px 0px 0px;
+}
+.video-popup button{
+    position: absolute;
+    top: 6px;
+    right: 6px;
 }
 
 .questions-wrapper{
  
-    margin-top: -10px;
+    margin-top: -15px;
     display: flex;
     flex-wrap: wrap;
 }
 .questions{
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
 .questions img{
-    width: 140px;
+    width: 120px;
     height: 80px;
     margin-left: 16px;
 }
@@ -58,17 +68,21 @@ height: 200px;
     margin-left: 16px;
 }
 .questions p{
+    margin-top: 15px;
     margin-left: 10px;
-    font-size: 8px;
+    /* margin-right: 10px; */
+    font-size: 10px;
     font-weight: 600;
 
 }
 .layout{
+    margin-top: -5px;
     background: #666666;
+    height: 100px;
 }
 .layout p{
-    padding-top: 10px;
-    font-size: 14px;
+    padding-top: 8px;
+    font-size: 12px;
     font-weight: 600;
     color: #FFFFFF;
 margin-left: 16px;
@@ -76,117 +90,141 @@ margin-left: 16px;
 .layout-section{
   display: flex;
 margin-left: 16px;
-margin-bottom: 20px;
+/* margin-bottom: 20px; */
 }
 .btn{
 color: #FFFFFF;
 font-size: 10px;
 font-weight: bold;
 font-style: normal;
+font-family: Roboto;
 background: #FF6600;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 border-radius: 5px;
+border: none;
 height:20px;
 width: 75px;
 }
 .list-section{
     margin-top: -5px;
+    /* line-height: 10px; */
 
 }
 .list-section li{
     color: #FFFFFF;
-    font-size: 6px;
+    font-size: 7px;
     font-weight: 600;
     font-style: normal;
+    line-height: 12px;
 }
 
 @media screen and (min-width:768px) {
 .welcome{
-text-align: center;    
+text-align: center; 
+margin-top: -20px;   
 }
 .welcome h1{
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 600;
+    text-align: center;
 }
 .welcome p{
 color: #666666;
-font-size: 15px;
+font-size: 16px;
 font-weight: 600;
-margin-top: -25px;
-margin-left: 20px;
-margin-right: 20px;
+margin-top: -22px;
+/* margin-left: 20px;
+margin-right: 20px; */
 }
 .questions-wrapper{
     gap:10px;
- padding:10px;    
+ padding:10px; 
+ margin-top: -20px;   
 }
 .questions{
 flex-direction:column;
 width: 18.8%;
+height: 50%;
 
 }
 .questions img{
     margin-left: 0px;
+    width: 100%;
 }
-.video-popup{
-    text-align: center;
+
+.video-popup {
+width: 500px;
+height: 250px;
+position: relative;
+margin: 0 auto;
+
 }
 .video-popup video{
-width: 400px;
-height: 200px;
-margin-right: 50px;
-top: 776px;
-border: 1px solid #000000;
-box-sizing: border-box;
-border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    border: 6px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0px 0px;
+}
+.video-popup button{
+    position: absolute;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 .questions video{
     width: 100%;
     margin-left:0;
 }
 .questions p{
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 600;
-    width:96%;
+    width:100%;
     margin-left:0px;
+    margin-top: 5px;
 
 }
 .layout{
     background: #666666;
+    margin-top: -20px;
+    height: 100px;
 }
 .layout p{
-    padding-top: 10px;
-    font-size: 18px;
+    /* padding-top: 10px; */
+    font-size: 15px;
     font-weight: 600;
     color: #FFFFFF;
-margin-left: 20px;
+margin-left: 10px;
 }
 .layout-section{
  display: flex;
-margin-left: 70px;
-margin-bottom: 20px;
+margin-left: 50px;
+/* margin-bottom: 20px; */
 }
 .btn{
 color: #FFFFFF;
-font-size: 18px;
-font-weight: bold;
+font-size: 15px;
+font-weight: 700;
 font-style: normal;
 background: #FF6600;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 12px;
-height:40px;
-width: 150px;
+/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+border-radius: 8px;
+border: none;
+height:30px;
+width: 120px;
+font-family: Roboto;
 }
 .list-section{
     margin-top: -10px;
-    margin-left: 0px;
+    margin-left: 5px;
 
 }
 .list-section li{
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
     font-style: normal;
+    line-height: 15px;
 }
     
 }
@@ -198,18 +236,7 @@ width: 150px;
     .questions p{
         width: 89%;
     }
-   .video-popup{
-    text-align: center;
-}
-.video-popup video{
-width: 400px;
-height: 200px;
-margin-right: 50px;
-top: 776px;
-border: 1px solid #000000;
-box-sizing: border-box;
-border-radius: 16px;
-} 
+   
     
 }
 
@@ -224,90 +251,108 @@ border-radius: 16px;
 }
     .welcome{
 text-align: center;
+margin-top: -20px;
     
 }
 .welcome h1{
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 600;
+    text-align: center;
 }
 .welcome p{
 color: #666666;
-font-size: 20px;
+font-size: 32px;
 font-weight: 600;
-margin-top: -25px;
-margin-left: 20px;
-margin-right: 20px;
+margin-top: -35px;
+/* margin-left: 20px;
+margin-right: 20px; */
 }
-/* .questions-wrapper{
-display: flex;
-margin-top: -20px;
-width: 100%;
+.questions-wrapper{
+margin-top: -30px;
         
-} */
+}
 .questions  {
 width: 19%;
 height: 50%;
+
 }
 .questions img{
-    width: 220px;
+    width: 100%;
     height: 135px;
 }
 .video-popup{
-    text-align: center;
+    width: 600px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
 }
 .video-popup video{
-width: 600px;
-height: 300px;
+width: 100%;
+height: 100%;
 /* left: 96px; */
-top: 776px;
-border: 1px solid #000000;
+/* top: 776px; */
+border: 10px solid #000000;
 box-sizing: border-box;
-border-radius: 16px;
+border-radius: 16px 16px 0px 0px;
+
+}
+.video-popup button{
+    position: absolute;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 .questions video{
     width: 100%;
     height: 100%;
 }
 .questions p{
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 600;
+    width: 100%;
+    margin-top: 5px;
 
 }
 .layout{
     background: #666666;
+    margin-top: -40px;
+    height: 130px;
 }
 .layout p{
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 600;
     color: #FFFFFF;
-margin-left: 20px;
+margin-left: 10px;
 }
 .layout-section{
     display: flex;
-    margin-left: 100px;
-    margin-bottom: 20px;
+    margin-left: 70px;
+    /* margin-bottom: 20px; */
 }
 .btn{
-color: #FFFFFF;
-font-size: 32px;
-font-weight: bold;
-font-style: normal;
-background: #FF6600;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 16px;
-height: 60px;
-width: 220px;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    background: #FF6600;
+    /* box-shadow: 0px 4px 4px rgb(0 0 0 / 25%); */
+    border-radius: 12px;
+    border: none;
+    height: 48px;
+    width: 200px;
+    font-family: Roboto;
 }
 .list-section{
-    margin-top: -20px;
-    margin-left: 70px;
+    margin-top: -25px;
+    margin-left: 22px;
 
 }
 .list-section li{
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     font-style: normal;
+    line-height: 20px;
 }
 
 }
