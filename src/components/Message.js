@@ -1,8 +1,8 @@
-import React from 'react';
-import "./Message.css"
+import React from "react";
+import "./Message.css";
 // import Banner from "../assets/Banner.jpeg";
-import MobileBanner from "../assets/MobileBanner.png"
-import DesktopBanner from "../assets/DesktopBanner.png"
+import MobileBanner from "../assets/MobileBanner.png";
+import DesktopBanner from "../assets/DesktopBanner.png";
 import video1 from "../assets/video1.mp4";
 import video2 from "../assets/video2.mp4";
 import video3 from "../assets/video3.mp4";
@@ -37,25 +37,66 @@ const Message = (props) => {
     setIsDisplay(true);
     setNum(num);
     if (num === "1") {
-      setVideoImage({ ...videoImage, img1: NowPlaying });
+      // setVideoImage({ ...videoImage, img1: NowPlaying });
+      setVideoImage({
+        ...videoImage,
+        img1: NowPlaying,
+        img2: videoImage1,
+        img3: videoImage1,
+        img4: videoImage1,
+        img5: videoImage1,
+      });
       setDisc("1. How to get more repeat customers? (By Creating Offers)");
     }
     if (num === "2") {
-      setVideoImage({ ...videoImage, img2: NowPlaying });
+      // setVideoImage({ ...videoImage, img2: NowPlaying });
       setDisc("2. How to get more repeat customers? (By Billing on Pharma)");
+      setVideoImage({
+        ...videoImage,
+        img1: videoImage1,
+        img2: NowPlaying,
+        img3: videoImage1,
+        img4: videoImage1,
+        img5: videoImage1,
+      });
     }
     if (num === "3") {
       setVideoImage({ ...videoImage, img3: NowPlaying });
       setDisc("3. How to increase repeat business from existing customers?");
+      setVideoImage({
+        ...videoImage,
+        img1: videoImage1,
+        img2: videoImage1,
+        img3: NowPlaying,
+        img4: videoImage1,
+        img5: videoImage1,
+      });
     }
     if (num === "4") {
       setVideoImage({ ...videoImage, img4: NowPlaying });
       setDisc("4. All in one solution for billing, payments, GST reports");
-    } else if (num === "5") {
+      setVideoImage({
+        ...videoImage,
+        img1: videoImage1,
+        img2: videoImage1,
+        img3: videoImage1,
+        img4: NowPlaying,
+        img5: videoImage1,
+      });
+    }
+    if (num === "5") {
       setVideoImage({ ...videoImage, img5: NowPlaying });
       setDisc(
         "5. All payments, One Solution! Collect Cash, Card, UPI at one place"
       );
+      setVideoImage({
+        ...videoImage,
+        img1: videoImage1,
+        img2: videoImage1,
+        img3: videoImage1,
+        img4: videoImage1,
+        img5: NowPlaying,
+      });
     }
   };
   return (
@@ -64,7 +105,7 @@ const Message = (props) => {
         <img src={MobileBanner} alt="" />
       </div>
       <div className="desktop-banner">
-<img src={DesktopBanner} alt="" />
+        <img src={DesktopBanner} alt="" />
       </div>
       <div className="welcome">
         <h1>Welcome Dear Merchant!</h1>
@@ -154,11 +195,11 @@ const Message = (props) => {
             <li>Personal app training by expert.</li>
             <li>Anytime callback and learn service.</li>
             <li>
-              Use pharma app and get cashback @ zero hidden charges.Check Cashback Scheme.
+              Use pharma app and get cashback @ zero hidden charges.Check
+              Cashback Scheme.
             </li>
           </ul>
         </div>
-        <div></div>
       </div>
     </>
   );

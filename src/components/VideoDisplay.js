@@ -27,7 +27,8 @@ function VideoDisplay({
     }
     if (num === "4") {
       setVideoImage({ ...videoImage, img4: videoImage1 });
-    } else if (num === "5") {
+    }
+    else if (num === "5") {
       setVideoImage({ ...videoImage, img5: videoImage1 });
     }
   };
