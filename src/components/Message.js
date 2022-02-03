@@ -154,8 +154,7 @@ const Message = (props) => {
             <li>Personal app training by expert.</li>
             <li>Anytime callback and learn service.</li>
             <li>
-              Use pharma app and get cashback @ zero hidden charges.
-              <br /> Check Cashback Scheme.
+              Use pharma app and get cashback @ zero hidden charges.Check Cashback Scheme.
             </li>
           </ul>
         </div>
