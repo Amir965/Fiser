@@ -277,8 +277,12 @@ font-family: Roboto;
         /* height: 180px; */
         height: 240px;
         display: block;
+        min-height: 40vh;
 }
-    
+ .container{
+     min-height: 40vh;
+ }  
+
 .desktop-banner img{
     height: 100%;
     object-fit: fill;
@@ -357,6 +361,10 @@ border-radius: 16px 16px 0px 0px;
     background: #666666;
     /* margin-top: -20px; */
     /* height: 110px; */
+    /* position: sticky;
+    bottom: 0;
+    width: 100%; */
+    min-height: 20vh;
 }
 .layout p{
     font-size: 24px;

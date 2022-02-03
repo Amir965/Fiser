@@ -107,7 +107,7 @@ const Message = (props) => {
       <div className="desktop-banner">
         <img src={DesktopBanner} alt="" />
       </div>
-      <div>
+      <div className="container">
       <div className="welcome">
         <h1>Welcome Dear Merchant!</h1>
         <p>5 ways to increase repeat business and beat competition.</p>
