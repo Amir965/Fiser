@@ -355,8 +355,8 @@ border-radius: 16px 16px 0px 0px;
 }
 .layout{
     background: #666666;
-    margin-top: -20px;
-    height: 110px;
+    /* margin-top: -20px; */
+    /* height: 110px; */
 }
 .layout p{
     font-size: 24px;
@@ -381,10 +381,10 @@ margin-left: 10px;
     height: 48px;
     width: 200px;
     font-family: Roboto;
-    margin-top: -5px;
+    /* margin-top: -5px; */
 }
 .list-section{
-    margin-top: -25px;
+    /* margin-top: -25px; */
     margin-left: 22px;
 
 }
