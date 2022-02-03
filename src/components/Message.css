@@ -1,16 +1,19 @@
 *{
     font-family: poppins;
 }
-.Banner-image img{
+.mobile-banner img{
     width: 100%;
     height: 80px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     /* object-fit: cover; */
 }
+.desktop-banner{
+    display: none;
+}
 .welcome{
     text-align: center;
-    margin-top: -10px;
+    /* margin-top: -10px; */
 }
 .welcome h1{
     font-size: 16px;
@@ -21,7 +24,7 @@
 color: #666666;
 font-size: 10px;
 font-weight: 600;
-margin-top: -10px;
+margin-top: -5px;
 /* margin-left: 20px;
 margin-right: 20px; */
 }
@@ -44,11 +47,15 @@ border-radius: 8px 8px 0px 0px;
     position: absolute;
     top: 6px;
     right: 6px;
+    background: #666666;
+        color: white;
+        font-weight:bolder;
+        border: none;
 }
 
 .questions-wrapper{
  
-    margin-top: -15px;
+    margin-top: -10px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -69,7 +76,7 @@ border-radius: 8px 8px 0px 0px;
     margin-left: 16px;
 }
 .questions p{
-    margin-top: 15px;
+    margin-top: 20px;
     margin-left: 10px;
     /* margin-right: 10px; */
     font-size: 10px;
@@ -79,9 +86,9 @@ border-radius: 8px 8px 0px 0px;
 
 }
 .layout{
-    margin-top: -5px;
+    /* margin-top: -5px; */
     background: #666666;
-    height: 100px;
+    height: 90px;
 }
 .layout p{
     padding-top: 8px;
@@ -122,27 +129,39 @@ width: 75px;
 }
 
 @media screen and (min-width:768px) {
+.mobile-banner{
+    display: none;
+}
+.desktop-banner{
+    display: block;
+}
+.desktop-banner img{
+width: 100%;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 .welcome{
 text-align: center; 
-margin-top: -20px;   
+/* margin-top: -20px;    */
 }
 .welcome h1{
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 600;
     text-align: center;
 }
 .welcome p{
 color: #666666;
-font-size: 16px;
+font-size: 14px;
 font-weight: 600;
-margin-top: -22px;
+margin-top: -10px;
 /* margin-left: 20px;
 margin-right: 20px; */
 }
 .questions-wrapper{
     gap:10px;
  padding:10px; 
- margin-top: -20px;   
+ margin-top: -15px;   
 }
 .questions{
 flex-direction:column;
@@ -174,6 +193,10 @@ margin: 0 auto;
     position: absolute;
     top: 5px;
     right: 5px;
+    background: #666666;
+        color: white;
+        font-weight:bolder;
+        border: none;
 }
 .questions video{
     width: 100%;
@@ -189,8 +212,8 @@ margin: 0 auto;
 }
 .layout{
     background: #666666;
-    margin-top: -20px;
-    height: 100px;
+    margin-top: -10px;
+    height: 110px;
 }
 .layout p{
     /* padding-top: 10px; */
@@ -227,7 +250,7 @@ font-family: Roboto;
     font-size: 12px;
     font-weight: 600;
     font-style: normal;
-    line-height: 15px;
+    line-height: 17px;
 }
     
 }
@@ -245,35 +268,41 @@ font-family: Roboto;
 
 
 @media screen and (min-width:1024px){
-    .Banner-image{
-        height: 200px;
-    }
-.Banner-image img{
+.mobile-banner{
+    display: none;
+}    
+.desktop-banner{
+        height: 180px;
+        display: block;
+}
+    
+.desktop-banner img{
     height: 100%;
     object-fit: fill;
+    width: 100%;
 }
     .welcome{
 text-align: center;
-margin-top: -20px;
+/* margin-top: -20px; */
     
 }
 .welcome h1{
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 600;
     text-align: center;
 }
 .welcome p{
 color: #666666;
-font-size: 32px;
+font-size: 20px;
 font-weight: 600;
-margin-top: -35px;
+margin-top: -10px;
 /* margin-left: 20px;
 margin-right: 20px; */
 }
-.questions-wrapper{
+/* .questions-wrapper{
 margin-top: -30px;
         
-}
+} */
 .questions  {
 width: 19%;
 height: 50%;
@@ -304,6 +333,10 @@ border-radius: 16px 16px 0px 0px;
     position: absolute;
     top: 10px;
     right: 10px;
+    background: #666666;
+        color: white;
+        font-weight:bolder;
+        border: none;
 }
 .questions video{
     width: 100%;
@@ -318,7 +351,7 @@ border-radius: 16px 16px 0px 0px;
 }
 .layout{
     background: #666666;
-    margin-top: -40px;
+    margin-top: -20px;
     height: 130px;
 }
 .layout p{
@@ -359,3 +392,4 @@ margin-left: 10px;
 }
 
 }
+

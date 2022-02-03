@@ -1,6 +1,8 @@
 import React from 'react';
 import "./Message.css"
-import Banner from "../assets/Banner.jpeg";
+// import Banner from "../assets/Banner.jpeg";
+import MobileBanner from "../assets/MobileBanner.png"
+import DesktopBanner from "../assets/DesktopBanner.png"
 import video1 from "../assets/video1.mp4";
 import video2 from "../assets/video2.mp4";
 import video3 from "../assets/video3.mp4";
@@ -58,8 +60,11 @@ const Message = (props) => {
   };
   return (
     <>
-      <div className="Banner-image">
-        <img src={Banner} alt="" />
+      <div className="mobile-banner">
+        <img src={MobileBanner} alt="" />
+      </div>
+      <div className="desktop-banner">
+<img src={DesktopBanner} alt="" />
       </div>
       <div className="welcome">
         <h1>Welcome Dear Merchant!</h1>
