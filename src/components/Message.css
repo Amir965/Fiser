@@ -110,7 +110,6 @@ font-weight: bold;
 font-style: normal;
 font-family: Roboto;
 background: #FF6600;
-/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 border-radius: 5px;
 border: none;
 height:20px;
@@ -235,7 +234,6 @@ font-size: 15px;
 font-weight: 700;
 font-style: normal;
 background: #FF6600;
-/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 border-radius: 8px;
 border: none;
 height:30px;
@@ -377,19 +375,20 @@ margin-left: 10px;
     margin-left: 70px;
     /* margin-bottom: 20px; */
 }
-.btn{
+.btn {
+    
     color: #FFFFFF;
     font-size: 24px;
     font-weight: 700;
     font-style: normal;
     background: #FF6600;
-    /* box-shadow: 0px 4px 4px rgb(0 0 0 / 25%); */
     border-radius: 12px;
     border: none;
     height: 48px;
     width: 200px;
     font-family: Roboto;
-    /* margin-top: -5px; */
+
+    
 }
 .list-section{
     /* margin-top: -25px; */

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Message.css";
-// import Banner from "../assets/Banner.jpeg";
 import MobileBanner from "../assets/MobileBanner.png";
 import DesktopBanner from "../assets/DesktopBanner.png";
 import video1 from "../assets/video1.mp4";
@@ -11,7 +10,14 @@ import video5 from "../assets/video5.mp4";
 import VideoDisplay from "./VideoDisplay";
 import videoImage1 from "../assets/videoImage.png";
 import NowPlaying from "../assets/NowPlaying2.png";
+import Popup from "./Popup";
+import Form from "./Form";
 const Message = (props) => {
+  const togglePopup = () => {
+  setIsOpen(!isOpen)
+}
+  const [isOpen, setIsOpen] = React.useState(false)
+  
   const [videoSrc, setVideoSrc] = React.useState("");
   const [isDisplay, setIsDisplay] = React.useState(false);
   const [disc, setDisc] = React.useState("");
@@ -191,7 +197,19 @@ const Message = (props) => {
       <div className="layout">
         <p>Book Your Free Expert Session</p>
         <div className="layout-section">
-          <button className="btn">BOOK NOW</button>
+          {/* <button className="btn">BOOK NOW</button> */}
+          {/* <a  className='btn' href="https://www.github.com/Amir965">BOOK NOW</a> */}
+          <input type="button" value="BOOK NOW" onClick={togglePopup}  className="btn"/>
+          {isOpen && (
+            <Popup
+              content={
+                
+                  <Form/>
+                
+              }
+              handleClose={togglePopup}
+            />
+          )}
           <ul className="list-section">
             <li>Personal app training by expert.</li>
             <li>Anytime callback and learn service.</li>
