@@ -1,6 +1,4 @@
-*{
-    font-family: poppins;
-}
+
 
   .popup-box {
   bottom: 1%;
@@ -49,7 +47,7 @@
     margin-top: -15px;
 }
 .input-field{
-    margin-top: 20px;
+    margin-top: 30px;
     height: 30px;
 }
 .input-field input{
@@ -123,7 +121,7 @@ margin-bottom: 20px;
     margin-top: -15px;
 }
 .input-field{
-    margin-top: 20px;
+    margin-top: 30px;
     height: 30px;
 }
 .input-field input{
@@ -198,7 +196,7 @@ margin-bottom: 20px;
     margin-top: -20px;
 }
 .input-field{
-    margin-top: 20px;
+    margin-top: 30px;
     height: 30px;
 }
 .input-field input{
