@@ -7,17 +7,18 @@
     top: 2%;
     height: max-content;
     left: 0;
+    min-height: 80vh;
 }
  
 .box {
   position: relative;
     width: 300px;
     margin: 0 auto;
-    height: auto;
+    height: 90vh;
     background: #fff;
     border-radius: 4px;
     border: 1px solid #999;
-    overflow: auto;
+    overflow: hidden;
 }
  
 .close-icon {
@@ -27,51 +28,10 @@
     line-height: 20px;
     text-align: center;
     font-size: 20px;
-    right: 5px;
+    right: -2px;
 }
-.heading h5{
-    font-size: 15px;
-    text-align: center;
-    color: #FF6600;
-    font-weight: 600;
-}
-.heading h6{
-    font-size: 12px;
-    color: #666666;
-    font-weight: 600;
-    margin-top: -10px;
-    padding-left: 20px;
-}
-.attribute{
-    padding: 0 20px 20px;
-    margin-top: -15px;
-}
-.input-field{
-    margin-top: 30px;
-    height: 30px;
-}
-.input-field input{
-    padding: 10px 10px ;
-    width:240px;
-    background: #E5E5E5;
-border-radius: 5px;
-border: none;
-}
-.footer-btn{
-    margin-top: 10px;
-    text-align: center;
-    
-}
-.footer-btn button{
-background: #FF6600;
-border-radius: 5px;
-height: 30px;
-width: 130px;
-font-size: 15px;
-color: #FFFFFF;
-border: none;
-margin-bottom: 20px;
-}
+
+
 
 @media screen and (min-width:768px){
    .popup-box {
@@ -81,17 +41,20 @@ margin-bottom: 20px;
     top: 2%;
     height: max-content;
     left: 0;
+    min-height: 80vh;
 }
  
 .box {
-  position: relative;
+  
+
+    position: relative;
     width: 300px;
     margin: 0 auto;
-    height: auto;
+    height: 70vh;
     background: #fff;
     border-radius: 4px;
     border: 1px solid #999;
-    overflow: auto;
+    overflow: hidden;
 }
  
 .close-icon {
@@ -101,51 +64,9 @@ margin-bottom: 20px;
     line-height: 20px;
     text-align: center;
     font-size: 20px;
-    right: 5px;
+    right: -2px;
 }
-.heading h5{
-    font-size: 15px;
-    text-align: center;
-    color: #FF6600;
-    font-weight: 600;
-}
-.heading h6{
-    font-size: 12px;
-    color: #666666;
-    font-weight: 600;
-    margin-top: -10px;
-    padding-left: 20px;
-}
-.attribute{
-    padding: 0 20px 20px;
-    margin-top: -15px;
-}
-.input-field{
-    margin-top: 30px;
-    height: 30px;
-}
-.input-field input{
-    padding: 10px 10px ;
-    width:240px;
-    background: #E5E5E5;
-border-radius: 5px;
-border: none;
-}
-.footer-btn{
-    margin-top: 10px;
-    text-align: center;
-    
-}
-.footer-btn button{
-background: #FF6600;
-border-radius: 5px;
-height: 30px;
-width: 130px;
-font-size: 15px;
-color: #FFFFFF;
-border: none;
-margin-bottom: 20px;
-}  
+ 
 }
 
 @media screen and (min-width:1024px){
@@ -156,17 +77,18 @@ margin-bottom: 20px;
     top: 8%;
     height: max-content;
     left: 0;
+    min-height: 70vh;
 }
  
 .box {
   position: relative;
     width: 400px;
     margin: 0 auto;
-    height: auto;
+    height: 80vh;
     background: #fff;
     border-radius: 10px;
     border: 1px solid #999;
-    overflow: auto;
+    overflow: hidden;
 }
  
 .close-icon {
@@ -176,51 +98,9 @@ margin-bottom: 20px;
     line-height: 20px;
     text-align: center;
     font-size: 20px;
-    right: 5px;
+    right: -2px;
 }
-.heading h5{
-    font-size: 20px;
-    text-align: center;
-    color: #FF6600;
-    font-weight: 600;
-}
-.heading h6{
-    font-size: 14px;
-    color: #666666;
-    font-weight: 600;
-    margin-top: -10px;
-    padding-left: 20px;
-}
-.attribute{
-    padding: 0 20px 20px;
-    margin-top: -20px;
-}
-.input-field{
-    margin-top: 30px;
-    height: 30px;
-}
-.input-field input{
-    padding: 10px 10px ;
-    width:340px;
-    background: #E5E5E5;
-border-radius: 5px;
-border: none;
-}
-.footer-btn{
-    margin-top: 20px;
-    text-align: center;
-    
-}
-.footer-btn button{
-background: #FF6600;
-border-radius: 5px;
-height: 40px;
-width: 150px;
-font-size: 20px;
-color: #FFFFFF;
-border: none;
-margin-bottom: 20px;
-}
+
 
 
 }

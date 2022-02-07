@@ -11,7 +11,7 @@ import VideoDisplay from "./VideoDisplay";
 import videoImage1 from "../assets/videoImage.png";
 import NowPlaying from "../assets/NowPlaying2.png";
 import Popup from "./Popup";
-import Form from "./Form";
+// import Form from "./Form";
 const Message = (props) => {
   const togglePopup = () => {
   setIsOpen(!isOpen)
@@ -114,26 +114,26 @@ const Message = (props) => {
         <img src={DesktopBanner} alt="" />
       </div>
       <div className="container">
-      <div className="welcome">
-        <h1>Welcome Dear Merchant!</h1>
-        <p>5 ways to increase repeat business and beat competition.</p>
-      </div>
-      <div
-        style={isDisplay ? myInlineCssBlock : myInlineCssNone}
-        // className="video-popup"
-      >
-        <VideoDisplay
-          videoSrc={videoSrc}
-          setIsDisplay={setIsDisplay}
-          setVideoImage={setVideoImage}
-          num={num}
-          videoImage={videoImage}
-          disc={disc}
-        />
-      </div>
-      <div className="questions-wrapper">
-        <div className="questions">
-          {/* <video
+        <div className="welcome">
+          <h1>Welcome Dear Merchant!</h1>
+          <p>5 ways to increase repeat business and beat competition.</p>
+        </div>
+        <div
+          style={isDisplay ? myInlineCssBlock : myInlineCssNone}
+          // className="video-popup"
+        >
+          <VideoDisplay
+            videoSrc={videoSrc}
+            setIsDisplay={setIsDisplay}
+            setVideoImage={setVideoImage}
+            num={num}
+            videoImage={videoImage}
+            disc={disc}
+          />
+        </div>
+        <div className="questions-wrapper">
+          <div className="questions">
+            {/* <video
             src={video}
             // width="200"
             // height="300
@@ -141,71 +141,86 @@ const Message = (props) => {
             autoplay="true"
             onClick={() => videoChanger(video)}
           /> */}
-          <img
-            src={videoImage.img1}
-            alt=""
-            onClick={() => videoChanger(video1, "1")}
-          />
-          <p>
-            1. How to get more repeat customers?
-            <br /> (By Creating Offers)
-          </p>
-        </div>
-        <div className="questions">
-          <img
-            src={videoImage.img2}
-            alt=""
-            onClick={() => videoChanger(video2, "2")}
-          />
+            <img
+              src={videoImage.img1}
+              alt=""
+              onClick={() => videoChanger(video1, "1")}
+            />
+            <p>
+              1. How to get more repeat customers?
+              <br /> (By Creating Offers)
+            </p>
+          </div>
+          <div className="questions">
+            <img
+              src={videoImage.img2}
+              alt=""
+              onClick={() => videoChanger(video2, "2")}
+            />
 
-          <p>
-            2. How to get more repeat customers?
-            <br /> (By Billing on Pharma)
-          </p>
-        </div>
-        <div className="questions">
-          <img
-            src={videoImage.img3}
-            alt=""
-            onClick={() => videoChanger(video3, "3")}
-          />
+            <p>
+              2. How to get more repeat customers?
+              <br /> (By Billing on Pharma)
+            </p>
+          </div>
+          <div className="questions">
+            <img
+              src={videoImage.img3}
+              alt=""
+              onClick={() => videoChanger(video3, "3")}
+            />
 
-          <p>3. How to increase repeat business from existing customers?</p>
-        </div>
-        <div className="questions">
-          <img
-            src={videoImage.img4}
-            alt=""
-            onClick={() => videoChanger(video4, "4")}
-          />
+            <p>3. How to increase repeat business from existing customers?</p>
+          </div>
+          <div className="questions">
+            <img
+              src={videoImage.img4}
+              alt=""
+              onClick={() => videoChanger(video4, "4")}
+            />
 
-          <p>4. All in one solution for billing, payments, GST reports</p>
-        </div>
-        <div className="questions">
-          <img
-            src={videoImage.img5}
-            alt=""
-            onClick={() => videoChanger(video5, "5")}
-          />
+            <p>4. All in one solution for billing, payments, GST reports</p>
+          </div>
+          <div className="questions">
+            <img
+              src={videoImage.img5}
+              alt=""
+              onClick={() => videoChanger(video5, "5")}
+            />
 
-          <p>
-            5. All payments, One Solution! Collect Cash, Card, UPI at one place
-          </p>
+            <p>
+              5. All payments, One Solution! Collect Cash, Card, UPI at one
+              place
+            </p>
+          </div>
         </div>
       </div>
-</div>
       <div className="layout">
         <p>Book Your Free Expert Session</p>
         <div className="layout-section">
           {/* <button className="btn">BOOK NOW</button> */}
-          {/* <a  className='btn' href="https://www.github.com/Amir965">BOOK NOW</a> */}
-          <input type="button" value="BOOK NOW" onClick={togglePopup}  className="btn"/>
+          {/* <a
+            className="btn"
+            href="https://forms.zohopublic.in/engage/form/BookNow/formperma/w_vAp__NVtssj9a-e_0edvfOu7Kb-HtI7MmE2iDaS3Y"
+          >
+            BOOK NOW
+          </a> */}
+          <input
+            type="button"
+            value="BOOK NOW"
+            onClick={togglePopup}
+            className="btn"
+          />
           {isOpen && (
             <Popup
               content={
-                
-                  <Form/>
-                
+                <iframe
+                  src="https://forms.zohopublic.in/engage/form/BookNow/formperma/w_vAp__NVtssj9a-e_0edvfOu7Kb-HtI7MmE2iDaS3Y"
+                  width="100%"
+                  height="100%"
+                  frameBorder="none"
+                  title="form"
+                ></iframe>
               }
               handleClose={togglePopup}
             />
